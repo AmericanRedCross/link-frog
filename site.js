@@ -8,8 +8,8 @@ const typesKey = 'types';
 const tagsKey = 'tags';
 const workstreamsKey = 'workstreams';
 
-/* USE TABLETOP.JS TO GRAB OUR LINK DATA FROM A GOOGLE SHEET */
-var publicSpreadsheetUrl = 'https://cors-anywhere.herokuapp.com/' + 'https://docs.google.com/spreadsheets/d/1_wTA4jZaujZvV6RfwGmgiffwHOUe1Pv3Gb7ae0lXx1M/pub?output=csv';
+/* GRAB OUR LINK DATA */
+var publicSpreadsheetUrl = 'https://americanredcross.github.io/google-sheets-workaround/links_covid-19.csv';
 function fetchSpreadsheet() {
     return new Promise(function(resolve, reject) {
       Papa.parse(publicSpreadsheetUrl, {
